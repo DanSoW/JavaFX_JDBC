@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="832.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox accessibleRole="BUTTON" prefHeight="394.0" prefWidth="600.0">
+         <children>
+            <MenuBar id="_menuBar">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <VBox prefHeight="14.0" prefWidth="600.0" />
+            <HBox prefHeight="235.0" prefWidth="686.0">
+               <children>
+                  <TableView id="_table" prefHeight="235.0" prefWidth="822.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+            <VBox prefHeight="25.0" prefWidth="600.0" />
+            <HBox prefHeight="150.0" prefWidth="686.0">
+               <children>
+                  <VBox prefHeight="170.0" prefWidth="186.0">
+                     <children>
+                        <VBox prefHeight="4.0" prefWidth="186.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="200.0" text="Регистрационный номер:" />
+                        <VBox prefHeight="13.0" prefWidth="186.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="242.0" text="Название книги:" />
+                        <VBox prefHeight="13.0" prefWidth="186.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="223.0" text="Количество страниц:" />
+                        <VBox prefHeight="11.0" prefWidth="186.0">
+                           <children>
+                              <VBox prefHeight="200.0" prefWidth="100.0" />
+                           </children>
+                        </VBox>
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="225.0" text="Год публикации:" />
+                        <VBox prefHeight="14.0" prefWidth="186.0" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="18.0" prefWidth="239.0" text="Раздел:" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="13.0" />
+                  <VBox prefHeight="150.0" prefWidth="180.0">
+                     <children>
+                        <TextField id="_txtRegNumber" alignment="CENTER" prefHeight="14.0" prefWidth="180.0" />
+                        <VBox prefHeight="5.0" prefWidth="180.0" />
+                        <TextField id="_txtNameBook" alignment="CENTER" />
+                        <VBox prefHeight="8.0" prefWidth="180.0" />
+                        <TextField id="_txtCountPages" alignment="CENTER" />
+                        <VBox prefHeight="4.0" prefWidth="180.0" />
+                        <TextField id="_txtYearPublishing" alignment="CENTER" />
+                        <VBox prefHeight="6.0" prefWidth="180.0" />
+                        <TextField id="_txtSection" alignment="CENTER" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="13.0" />
+                  <VBox prefHeight="150.0" prefWidth="136.0">
+                     <children>
+                        <Button id="_btnAdd" mnemonicParsing="false" prefHeight="26.0" prefWidth="165.0" text="Добавить" />
+                        <VBox prefHeight="114.0" prefWidth="136.0" />
+                        <Button id="_btnRefactor" mnemonicParsing="false" prefHeight="26.0" prefWidth="158.0" text="Изменить" />
+                        <VBox prefHeight="115.0" prefWidth="136.0" />
+                        <Button id="_btnDelete" mnemonicParsing="false" prefHeight="26.0" prefWidth="196.0" text="Удалить" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="150.0" prefWidth="11.0" />
+                  <VBox prefHeight="150.0" prefWidth="287.0">
+                     <children>
+                        <Button id="_btnInputDB" mnemonicParsing="false" prefHeight="26.0" prefWidth="310.0" text="Добавить в базу данных" />
+                        <VBox prefHeight="126.0" prefWidth="287.0" />
+                        <Button id="_btnOutputDB" mnemonicParsing="false" prefHeight="26.0" prefWidth="314.0" text="Считать из базы данных" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
